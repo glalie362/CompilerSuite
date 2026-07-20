@@ -1,0 +1,25 @@
+## WORKSPACE EXECUTIVE SUMMARY (YAML)
+# Generated: 2026-07-16T10:32:06.0440338+01:00
+# Root: C:\Users\Jamie\source\repos\Compiler
+Architecture:
+  Type: General Codebase
+  Scale: 7 relevant source files
+  Components: 0
+  Controllers: 0
+  Models: 0
+  Services: 0
+---
+- File: Compiler.slnx
+  Preview: "<Solution>  <Configurations>   <Platform Name='x64' />   <Platform Name='x86' />  </Configurations>  <Project Path='Compiler/Compiler.vcxproj' Id='0da..."
+- File: Backend\HelloWorld.cpp
+  Preview: "#include <iostream> void HelloWorld() {   std::cout << 'Hello World' << std::endl; } "
+- File: Compiler\Main.cpp
+  Preview: "#include 'Backend/InstructionList.hpp' int main() { 	using namespace Backend; 	InstructionList instructions; 	instructions.Add<Jump>(); }"
+- File: Compiler\Backend\Function.cpp
+  Preview: "#include 'Function.hpp' Backend::ValueId Backend::FunctionBuilder::CreateTemporary(TypePointer type) {   return ValueId(); } Backend::ValueId Backend:..."
+- File: Compiler\Backend\Instruction.hpp
+  Preview: "#pragma once #include 'Value.hpp' namespace Backend { 	template<typename Derived> 	struct Binary { 		Value* destination; 		Value* left; 		Value* right..."
+- File: Compiler\Backend\InstructionList.hpp
+  Preview: "#pragma once #include <vector> #include 'Instruction.hpp' namespace Backend { 	class InstructionList { 	public: 		template<typename Ins, typename ...A..."
+- File: Compiler\Backend\Value.hpp
+  Preview: "#pragma once #include <variant> namespace Backend { 	struct Constant {}; 	struct Temporary {}; 	struct Variable {}; 	using Value = std::variant<Consta..."
