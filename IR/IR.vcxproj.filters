@@ -21,9 +21,18 @@
     <ClInclude Include="Instruction.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Value.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ValueType.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Value.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

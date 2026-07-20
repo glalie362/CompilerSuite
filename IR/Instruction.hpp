@@ -1,7 +1,6 @@
 #pragma once
 
 namespace IR {
-
 	template<typename Derived>
 	struct Binary {
 	};
